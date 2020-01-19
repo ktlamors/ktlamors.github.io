@@ -21,9 +21,9 @@
     }
 
     .head-container {
-        position: center;
+        position: absolute;
         padding: 0px 30px;
-        width: 70%;
+        width: 90%;
     }
 
     .post-container {
