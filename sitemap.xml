@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://kotora.top/contact/index.html</loc>
+    <loc>http://kotora.top/categories/index.html</loc>
     
-    <lastmod>2020-01-19T02:46:45.716Z</lastmod>
+    <lastmod>2020-01-19T02:50:12.262Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://kotora.top/tags/index.html</loc>
+    
+    <lastmod>2020-01-19T02:50:01.405Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://kotora.top/about/index.html</loc>
     
-    <lastmod>2020-01-18T12:54:54.926Z</lastmod>
+    <lastmod>2020-01-19T02:49:48.215Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://kotora.top/contact/index.html</loc>
+    
+    <lastmod>2020-01-19T02:46:45.716Z</lastmod>
     
   </url>
   
@@ -23,23 +37,9 @@
   </url>
   
   <url>
-    <loc>http://kotora.top/tags/index.html</loc>
-    
-    <lastmod>2020-01-18T07:21:53.954Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://kotora.top/googleb497f3d9e9f2bead.html</loc>
     
     <lastmod>2020-01-15T08:17:05.439Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://kotora.top/categories/index.html</loc>
-    
-    <lastmod>2020-01-14T03:27:33.100Z</lastmod>
     
   </url>
   
