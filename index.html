@@ -1,1327 +1,151 @@
-<!DOCTYPE HTML>
-<html lang="zh-CN">
-
-
-
-
-
-
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="一级建造师　二级建造师　注册监理工程师　注册安全工程师 设计资源 圆方软件 草图大师 sketchup PS　">
-    <meta name="description" content="ZWOO的博客">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>ZWOO的博客</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
-
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
-    
-    <script src="/libs/jquery/jquery.min.js"></script>
-    
-<meta name="generator" content="Hexo 4.2.0"></head>
-
-
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			.container{
+				min-height: 100%;
+				max-height: 100%;
+			}
+			.header{
+				background: linear-gradient(0deg, #029bc5, #04b2e4);
+				height: 70px;
+				/* margin-top: 8px; */
+				
+				
+			}
+			.header h1 {
+				text-align: center;
+				font-size: 24px;
+				line-height: 35px;
+				color: #fff;
+				font-weight: 400;
+				
+			}
+			
+			.seheader{
+				hyphenate-limit-chars: 50px;
+			}
+			#seheader h3{
+				line-height: 50px;
+				font-weight: 400;
+				text-align: center;
+				font-size: 20px;
+			}
+			.main {
+				padding: 0px 2%;
+			}
+			.row{
+				margin-top: 5px;
+				display: flex;
+			}
+			
+			.label, .value{
+				display: inline-block;
+				height: 38px;
+				line-height: 38px;
+				font-size: 18px;
+			}
+			.label{
+				background-color: #0199fe;
+				text-align: center;
+				padding-left: 20px;
+				padding-right: 20px;
+				color: #fff;
+				border-radius: 6px 0px 0px 6px;
+				width: 32%;
+				
+			}
+			.value{
+				font-weight: 500;
+				border: 1px solid #999;
+				border-left: 0px;
+				width: 68%;
+				padding-left: 10px;
+				border-radius: 0px 6px 6px 0px;
+			}
+			.footer p{
+				font-size: 10px;
+				text-align: center;
+				margin-top: 16px;
+			}
+		</style>
+	</head>
 <body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper head-container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">ZWOO的博客</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
-
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">ZWOO的博客</div>
-        <div class="logo-desc">
-            
-            ZWOOの博客
-            
-        </div>
-    </div>
-
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
-		</a>
-          
-        </li>
-        
-        
-    </ul>
-</div>
-
-        </div>
-
-        
-    </nav>
-
-</header>
-
-    
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color:rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-</style>
-
-
-
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-
-    <div class="carousel-item red white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                ZWOOの博客
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['心里多少个不想结束、可是只能说再见了、可能对你是最好的选择、算是一种解脱吧...',''],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
-</script>
-
-
-
-            <div class="cover-btns">
-                <a href="#indexCard" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>开始阅读
-                </a>
-
-                
-            </div>
-            <div class="cover-social-link">
-
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=229881005" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 229881005" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
-        </div>
-    </div>
-
-    
-</div>
-
-<script>
-    $(function () {
-        let coverSlider = $('.carousel');
-        coverSlider.carousel({
-            duration: Number('360'),
-            fullWidth: true,
-            indicators: 'false' === 'true'
-        });
-
-        let carouselIntervalId;
-        
-        // Loop to call the next cover article picture.
-        let autoCarousel = function() {
-            carouselIntervalId = setInterval(function () {
-                coverSlider.carousel('next');
-            }, 5000);
-        };
-        autoCarousel();
-        
-
-        let restartPlay = function () {
-            
-            clearInterval(carouselIntervalId);
-            autoCarousel();
-            
-        };
-
-        
-        // prev and next cover post.
-        $('#prev-cover').click(function () {
-            coverSlider.carousel('prev');
-            restartPlay();
-        });
-        $('#next-cover').click(function () {
-            coverSlider.carousel('next');
-            restartPlay();
-        });
-        
-    });
-</script>
-
-
-
-<main class="content">
-
-    
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
-                        <div class="dream">
-    
-    <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;ZWOOの博客
-    </div>
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            KOTORA ZWOO BLOG
-        </div>
-    </div>
-</div>
-                    
-
-                    
-
-                    
-
-                    
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-    
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/archives/aff4aa2d.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="https://www.kanjiantu.com/images/2020/02/08/22669cd63f53fc391a.jpg" class="responsive-img" alt="钻孔灌注桩基础">
-                            
-                            <span class="card-title">钻孔灌注桩基础</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                钻孔灌注桩基础  
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-08
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%B8%82%E6%94%BF%E5%85%AC%E7%94%A8%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%E4%B8%8E%E5%AE%9E%E5%8A%A1/" class="post-category">
-                                    市政公用工程管理与实务
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E4%B8%80%E7%BA%A7%E5%BB%BA%E9%80%A0%E5%B8%88/">
-                            <span class="chip bg-color">一级建造师</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%B8%82%E6%94%BF%E5%85%AC%E7%94%A8%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%E4%B8%8E%E5%AE%9E%E5%8A%A1/">
-                            <span class="chip bg-color">市政公用工程管理与实务</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/archives/baa588ed.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="https://www.kanjiantu.com/images/2020/02/07/12174b279ed8dc912b.jpg" class="responsive-img" alt="墩台、盖梁施工技术">
-                            
-                            <span class="card-title">墩台、盖梁施工技术</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                墩台、盖梁施工技术现浇混凝土墩台、盖梁重力式混凝土墩台施工1，浇筑前基础顶面凿毛处理，清楚锚筋污染。2，墩台混凝土宜水平分层浇筑，每层1.5-2m。3，分块浇筑：200平方米内，不超过2块，300平方米不超过3块。4，大体积混凝土：表1k4
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-08
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%B8%82%E6%94%BF%E5%85%AC%E7%94%A8%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%E4%B8%8E%E5%AE%9E%E5%8A%A1/" class="post-category">
-                                    市政公用工程管理与实务
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E4%B8%80%E7%BA%A7%E5%BB%BA%E9%80%A0%E5%B8%88/">
-                            <span class="chip bg-color">一级建造师</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%B8%82%E6%94%BF%E5%85%AC%E7%94%A8%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%E4%B8%8E%E5%AE%9E%E5%8A%A1/">
-                            <span class="chip bg-color">市政公用工程管理与实务</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/archives/95b0bf10.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="https://www.kanjiantu.com/images/2020/02/07/12174b279ed8dc912b.jpg" class="responsive-img" alt="装配式梁板施工技术">
-                            
-                            <span class="card-title">装配式梁板施工技术</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                装配式梁板施工技术装配式梁板施工方案1，在施工方案编制前，应对施工现场条件和拟定运输路线社会交通进行调研和评估。2，按照设计要求和现场条件确定梁板预制和吊装方案。3，依据施工组织进度和现场条件选择构件厂预制和施工现场预制。4，梁板架设方法有
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-08
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%B8%82%E6%94%BF%E5%85%AC%E7%94%A8%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%E4%B8%8E%E5%AE%9E%E5%8A%A1/" class="post-category">
-                                    市政公用工程管理与实务
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E4%B8%80%E7%BA%A7%E5%BB%BA%E9%80%A0%E5%B8%88/">
-                            <span class="chip bg-color">一级建造师</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%B8%82%E6%94%BF%E5%85%AC%E7%94%A8%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%E4%B8%8E%E5%AE%9E%E5%8A%A1/">
-                            <span class="chip bg-color">市政公用工程管理与实务</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%9F%8E%E5%B8%82%E6%A1%A5%E6%A2%81%E5%B7%A5%E7%A8%8B/">
-                            <span class="chip bg-color">城市桥梁工程</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/archives/f45331c5.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="https://www.kanjiantu.com/images/2020/02/07/110365bd1d3e871f25.jpg" class="responsive-img" alt="钢筋（管）混凝土拱桥施工技术">
-                            
-                            <span class="card-title">钢筋（管）混凝土拱桥施工技术</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                钢筋（管）混凝土拱桥施工技术拱桥的类型与施工方法选择拱架时，主要原则是拱架应有足够强度，刚度，稳定性。  
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-08
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%B8%82%E6%94%BF%E5%85%AC%E7%94%A8%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%E4%B8%8E%E5%AE%9E%E5%8A%A1/" class="post-category">
-                                    市政公用工程管理与实务
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E4%B8%80%E7%BA%A7%E5%BB%BA%E9%80%A0%E5%B8%88/">
-                            <span class="chip bg-color">一级建造师</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%B8%82%E6%94%BF%E5%85%AC%E7%94%A8%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%E4%B8%8E%E5%AE%9E%E5%8A%A1/">
-                            <span class="chip bg-color">市政公用工程管理与实务</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%9F%8E%E5%B8%82%E6%A1%A5%E6%A2%81%E5%B7%A5%E7%A8%8B/">
-                            <span class="chip bg-color">城市桥梁工程</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/archives/a416fe5a.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="https://www.kanjiantu.com/images/2020/02/08/21170c75766c2771af.jpg" class="responsive-img" alt="现浇预应力钢筋混凝土连续梁施工技术">
-                            
-                            <span class="card-title">现浇预应力钢筋混凝土连续梁施工技术</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                现浇预应力钢筋混凝土连续梁施工技术1，支架的地基承载力应符合要求。2，支架和模板安装后，宜采取措施消除拼装间隙和地基沉降等非弹性变形。3，安装支架时，应根据弹性、非弹性变形，设置预拱度。4，浇筑分段工作缝，必须设在弯矩零点附近。  
-
-5，
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-08
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%B8%82%E6%94%BF%E5%85%AC%E7%94%A8%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%E4%B8%8E%E5%AE%9E%E5%8A%A1/" class="post-category">
-                                    市政公用工程管理与实务
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E4%B8%80%E7%BA%A7%E5%BB%BA%E9%80%A0%E5%B8%88/">
-                            <span class="chip bg-color">一级建造师</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%B8%82%E6%94%BF%E5%85%AC%E7%94%A8%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%E4%B8%8E%E5%AE%9E%E5%8A%A1/">
-                            <span class="chip bg-color">市政公用工程管理与实务</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%9F%8E%E5%B8%82%E6%A1%A5%E6%A2%81%E5%B7%A5%E7%A8%8B/">
-                            <span class="chip bg-color">城市桥梁工程</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/archives/863a6825.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="https://www.kanjiantu.com/images/2020/02/07/491fa0467b41d2b7e.jpg" class="responsive-img" alt="桩基础施工方法与设备选择">
-                            
-                            <span class="card-title">桩基础施工方法与设备选择</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                桩基础施工方法与设备选择城市桥梁工程桩基础通常分为沉入桩基础和灌注桩基础。按成桩施工方法分沉入桩，钻孔灌注桩，人工挖孔桩。  
-沉入桩基础1，常用的沉入桩有钢筋混凝土桩，预应力混凝土桩和钢管桩。2，锤击沉桩–砂类土，粘性土3，振动沉桩–密实
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-08
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%B8%82%E6%94%BF%E5%85%AC%E7%94%A8%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%E4%B8%8E%E5%AE%9E%E5%8A%A1/" class="post-category">
-                                    市政公用工程管理与实务
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E4%B8%80%E7%BA%A7%E5%BB%BA%E9%80%A0%E5%B8%88/">
-                            <span class="chip bg-color">一级建造师</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%B8%82%E6%94%BF%E5%85%AC%E7%94%A8%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%E4%B8%8E%E5%AE%9E%E5%8A%A1/">
-                            <span class="chip bg-color">市政公用工程管理与实务</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/archives/92b9e306.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="https://www.kanjiantu.com/images/2020/02/07/18958ed9f0d72bcc4d.jpg" class="responsive-img" alt="桥梁下部结构施工">
-                            
-                            <span class="card-title">桥梁下部结构施工</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                桥梁下部结构施工各类围堰施工要求1，围堰高度应高出最高水位0.5-0.7m。2，围堰应减少对现状河道通航导流的影响。3，围堰应满足施工要求。4，防水严密，不得渗漏。5，
-土围堰施工要求1，宜用粘性土，粉质黏土，砂质黏土。填土自上游至下游合龙
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-08
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%B8%82%E6%94%BF%E5%85%AC%E7%94%A8%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%E4%B8%8E%E5%AE%9E%E5%8A%A1/" class="post-category">
-                                    市政公用工程管理与实务
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E4%B8%80%E7%BA%A7%E5%BB%BA%E9%80%A0%E5%B8%88/">
-                            <span class="chip bg-color">一级建造师</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%B8%82%E6%94%BF%E5%85%AC%E7%94%A8%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%E4%B8%8E%E5%AE%9E%E5%8A%A1/">
-                            <span class="chip bg-color">市政公用工程管理与实务</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/archives/fa201002.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="https://www.kanjiantu.com/images/2020/02/07/024cd9df425385c97.jpg" class="responsive-img" alt="建设工程项目的组织">
-                            
-                            <span class="card-title">建设工程项目的组织</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                建设工程项目的组织项目是一次性的，没有完全相同的项目。组织是系统目标实现的主要因素。影响目标实现的其他因素：人（管理人员生产人员的数量和质量）、方法与工具（管理和生产的方法和工具）。系统的目标决定了系统的组织，组织是目标实现决定性因素。控制
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-07
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%BB%BA%E8%AE%BE%E5%B7%A5%E7%A8%8B%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/" class="post-category">
-                                    建设工程项目管理
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E4%B8%80%E7%BA%A7%E5%BB%BA%E9%80%A0%E5%B8%88/">
-                            <span class="chip bg-color">一级建造师</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%BB%BA%E8%AE%BE%E5%B7%A5%E7%A8%8B%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/">
-                            <span class="chip bg-color">建设工程项目管理</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/archives/197dcd3d.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="https://www.kanjiantu.com/images/2020/02/08/21170c75766c2771af.jpg" class="responsive-img" alt="建设工程项目策划">
-                            
-                            <span class="card-title">建设工程项目策划</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                建设工程项目策划建设工程项目策划旨在为项目建设的决策和实施增值。工程项目策划的过程是专家知识的组织和集成，和信息的组织和集成的过程。实质是知识管理的过程。  
-项目决策阶段策划的工作内容1，建设工程项目策划阶段策划的主要任务是定义项目开发或
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-07
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%BB%BA%E8%AE%BE%E5%B7%A5%E7%A8%8B%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/" class="post-category">
-                                    建设工程项目管理
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E4%B8%80%E7%BA%A7%E5%BB%BA%E9%80%A0%E5%B8%88/">
-                            <span class="chip bg-color">一级建造师</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%BB%BA%E8%AE%BE%E5%B7%A5%E7%A8%8B%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/">
-                            <span class="chip bg-color">建设工程项目管理</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/archives/45aadca7.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="https://www.kanjiantu.com/images/2020/02/07/110365bd1d3e871f25.jpg" class="responsive-img" alt="建设工程项目采购模式">
-                            
-                            <span class="card-title">建设工程项目采购模式</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                建设工程项目采购的模式项目管理委托的模式1，项目管理咨询公司所提供的的这类服务的工作性质属于工程咨询（工程顾问）服务。  
-项目总承包的模式项目总承包的内涵设计采购施工总承包是总承包企业按照合同约定，承担工程项目的设计，采购，施工，试运行服
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-07
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%BB%BA%E8%AE%BE%E5%B7%A5%E7%A8%8B%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/" class="post-category">
-                                    建设工程项目管理
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E4%B8%80%E7%BA%A7%E5%BB%BA%E9%80%A0%E5%B8%88/">
-                            <span class="chip bg-color">一级建造师</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%BB%BA%E8%AE%BE%E5%B7%A5%E7%A8%8B%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/">
-                            <span class="chip bg-color">建设工程项目管理</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/archives/23219c0c.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="https://www.kanjiantu.com/images/2020/02/07/176e99a1eea5c95b8.jpg" class="responsive-img" alt="建设工程项目管理的目标和任务">
-                            
-                            <span class="card-title">建设工程项目管理的目标和任务</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                建设工程项目管理的目标和任务项目的实施阶段包括设计前准备阶段、设计阶段、施工阶段、动用准备阶段、保修期。项目实施阶段管理的主要任务是：实现项目目标。建设工程项目的时间范畴：实施阶段建设工程项目管理的内涵：通过项目策划、项目控制使费用、进度、
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-07
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%BB%BA%E8%AE%BE%E5%B7%A5%E7%A8%8B%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/" class="post-category">
-                                    建设工程项目管理
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E4%B8%80%E7%BA%A7%E5%BB%BA%E9%80%A0%E5%B8%88/">
-                            <span class="chip bg-color">一级建造师</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%BB%BA%E8%AE%BE%E5%B7%A5%E7%A8%8B%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/">
-                            <span class="chip bg-color">建设工程项目管理</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/archives/3ebf87e8.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="https://www.kanjiantu.com/images/2020/02/07/1927182a235e9aa1c3.jpg" class="responsive-img" alt="建设工程管理的内涵和任务">
-                            
-                            <span class="card-title">建设工程管理的内涵和任务</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                建设工程管理的内涵和任务建设工程管理的内涵1，建设工程项目的全寿命周期包括项目的决策阶段，实施阶段，使用阶段。2，项目决策阶段的工作：编写项目建议书、编制项目可行性研究报告，组织管理经济技术论证。3，项目立项是项目决策的标志。4，决策阶段管
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-07
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%BB%BA%E8%AE%BE%E5%B7%A5%E7%A8%8B%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/" class="post-category">
-                                    建设工程项目管理
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E4%B8%80%E7%BA%A7%E5%BB%BA%E9%80%A0%E5%B8%88/">
-                            <span class="chip bg-color">一级建造师</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%BB%BA%E8%AE%BE%E5%B7%A5%E7%A8%8B%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/">
-                            <span class="chip bg-color">建设工程项目管理</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </div>
-    </article>
-
-</main>
-
-
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a class="left btn-floating btn-large disabled">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">1 / 2</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/2/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
-    </div>
-</div>
-
-
-
-
-    <footer class="page-footer bg-color">
-    <div class="container row center-align" style="margin-bottom: 15px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
-            <span id="year">2020</span>
-            <a href="http://kotora.top" target="_blank">ZWOO</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
-            
-            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">7.3k</span>&nbsp;字
-            
-            
-            
-            
-            
-            
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
-            </span>
-            
-            
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
-            </span>
-            
-            <br>
-            
-            <span id="sitetime">载入运行时间...</span>
-            <script>
-                function siteTime() {
-                    var seconds = 1000;
-                    var minutes = seconds * 60;
-                    var hours = minutes * 60;
-                    var days = hours * 24;
-                    var years = days * 365;
-                    var today = new Date();
-                    var startYear = "2020";
-                    var startMonth = "1";
-                    var startDate = "14";
-                    var startHour = "0";
-                    var startMinute = "0";
-                    var startSecond = "0";
-                    var todayYear = today.getFullYear();
-                    var todayMonth = today.getMonth() + 1;
-                    var todayDate = today.getDate();
-                    var todayHour = today.getHours();
-                    var todayMinute = today.getMinutes();
-                    var todaySecond = today.getSeconds();
-                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
-                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
-                    var diff = t2 - t1;
-                    var diffYears = Math.floor(diff / years);
-                    var diffDays = Math.floor((diff / days) - diffYears * 365);
-                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
-                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
-                        minutes);
-                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
-                        diffMinutes * minutes) / seconds);
-                    if (startYear == todayYear) {
-                        document.getElementById("year").innerHTML = todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
-                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
-                    } else {
-                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
-                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
-                    }
-                }
-                setInterval(siteTime, 1000);
-            </script>
-            
-            <br>
-            
-        </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=229881005" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 229881005" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
-    </div>
-</footer>
-
-<div class="progress-bar"></div>
-
-
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
-        </div>
-        <div id="searchResult"></div>
-    </div>
-</div>
-
-<script src="/js/search.js"></script>
-<script type="text/javascript">
-$(function () {
-    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
-});
-</script>
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
-
-
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156499386-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-    gtag('config', 'UA-156499386-1');
-</script>
-
-
-    <!-- Baidu Analytics -->
-
-<script>
-    var _hmt = _hmt || [];
-    (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?f9aa6c529456ff247df6b6839acf8a34";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
-
-    <!-- Baidu Push -->
-
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
-
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
-
-    
-        <script src="//code.tidio.co/mcytbycuxw2snpxn3rzujlje8cif4pp0.js"></script>
-        <script> 
-            $(document).ready(function () {
-                setInterval(change_Tidio, 50);  
-                function change_Tidio() { 
-                    var tidio=$("#tidio-chat iframe");
-                    if(tidio.css("display")=="block"&& $(window).width()>977 ){
-                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" &&$(window).width()>977)>0? "-40px" : ($("div.toc-title").length&&$(window).width()>977)>0?"85px":"20px";   
-                        document.getElementById("tidio-chat-iframe").style.right="-15px";   
-                        document.getElementById("tidio-chat-iframe").style.height=parseInt(tidio.css("height"))>=520?"520px":tidio.css("height");
-                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
-                    } 
-                    else if(tidio.css("display")=="block"&&$(window).width()>601 &&$(window).width()<992 ){
-                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && 601< $(window).width()<992)>0? "-40px":"20px" ;   
-                        document.getElementById("tidio-chat-iframe").style.right="-15px"; 
-                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
-                    }
-                    else if(tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))<230){
-                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && $(window).width()<601)>0? "-10px":"45px" ;   
-                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
-                    }
-                    if( tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))>=230){
-                        document.getElementById("tidio-chat-iframe").style.zIndex="998";
-                    }
-                } 
-            }); 
-        </script>
-    
-
-    
-	
-            <script type="text/javascript">
-            //只在桌面版网页启用特效
-            var windowWidth = $(window).width();
-            if (windowWidth > 300) {
-                document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
-            }
-            </script>
-        
-    <!-- kotora -->
-    <script type="text/javascript">
-        WIDGET = {FID: 'bJk8mcIyjV'}
-    </script>
-    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
-
-    
-
-    
-
-    
-    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
-    
-    
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
-
-</body>
-
+		
+		<div class="container">
+		  <div class="header">
+		    <h1>正定县中医院</h1>
+		    <h1>继续医学教育年度学分汇总表</h1>
+		  </div>
+		  <div id="seheader">
+		  	<h3>学分验证信息</h3>
+		  </div>
+		  <ul class="main">
+		    <li class="row">
+				<div class="label">学员姓名</div>
+				<div class="value">李文艺</div>
+			</li>
+		    <li class="row">
+		      <div class="label">学员单位</div>
+		      <div class="value">正定县中医院</div>
+		    </li>
+		    <li class="row">
+		      <div class="label">学员科室</div>
+		      <div class="value">妇一科</div>
+		    </li>
+		    <li class="row">
+		      <div class="label">学员编号</div>
+		      <div class="value">1501G3ACG</div>
+		    </li>
+		    <li class="row">
+		      <div class="label">身份证号</div>
+		      <div class="value">130105197504151549</div>
+		    </li>
+		    <li class="row">
+		      <div class="label">学员职称</div>
+		      <div class="value">主治医师</div>
+		    </li>
+		    <li class="row">
+		      <div class="label">达标情况</div>
+		      <div class="value">达标</div>
+		    </li>
+		     <li class="row">
+		      <div class="label">年度</div>
+		      <div class="value">2021</div>
+		    </li>
+		    <li class="row">
+		      <div class="label">总学分</div>
+		      <div class="value">34.0</div>
+		    </li>
+		    <li class="row">
+		      <div class="label">Ⅰ类学分</div>
+		      <div class="value">14.0</div>
+		    </li>
+		    <li class="row">
+		      <div class="label">Ⅱ类学分</div>
+		      <div class="value">20.0</div>
+		    </li>
+			<li class="row">
+			  <div class="label">其他学分</div>
+			  <div class="value">20.0</div>
+			</li>
+		  </ul>
+		  <div class="footer">
+		    <p>技术支持:好医生网站(北京健康在线网络技术有限公司) 400-780-2600</p >
+		  </div>
+		</div>
+		<script src="js/mui.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
 </html>
