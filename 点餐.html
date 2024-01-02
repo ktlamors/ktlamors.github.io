@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>点名系统</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /* display: flex; */
+            /* align-items: center; */
+            /* align-content: center; */
+            /* justify-content: center; */
+            background-color: #292929;
+            width: 100%;
+            min-height: 100vh;
+            /* align-items: center; */
+            }
+        #container{
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+            min-height: 100vh;
+            width: 90%;
+
+        }
+        #name{
+            display: block;
+            width: 90%;
+            height: 150px;
+            background-color: #fff;
+            border-radius: 20px;
+            border: 2px solid red;
+            background-color: #292929;
+            font-size: 30px;
+            line-height: 150px;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 120px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        #click{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100PX;
+        }
+        button{
+            display: inline-block;
+            width: 100px;
+            height: 60px;
+            border-radius: 8px;
+            background-color:chocolate;
+            color: #fff;
+            font-size: 30px;
+        }
+        #end{
+            margin-left: 120px;
+        }
+        .text{
+            position: absolute;
+            font-size: 60px;
+            color: #fff;
+            font-size: 240px;
+            
+        }
+        #zs{
+            top: 20px;
+            left: 20px;
+        }
+        #ys{
+            top: 20px;
+            right: 20px;
+        }
+        #zx{
+            bottom: 20px;
+            left: 20px;
+        }
+        #yx{
+            bottom: 20px;
+            right: 20px;
+        }
+        #happy{
+            bottom: 20px;
+            position: absolute;
+            font-size: 60px; 
+        }
+        #date{
+            margin-top: 50px;
+            font-size: 40px;
+            color: #fff;
+            /* margin: 0 auto; */
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="date"></div>
+
+    <div class="container">
+        <div id="name">
+            今天吃什么？
+        </div>
+        <div id="click">
+            <button id="start">点击</button>
+            <button id="end">停止</button>
+        </div>
+    </div>
+    <!-- <div class="date2"></div> -->
+    <!-- <div id="zs" class="text zs"></div>
+    <div id="ys" class="text ys"></div>
+    <div id="zx" class="text zx"></div>
+    <div id="yx" class="text yx"></div>
+    <div id="happy" class="text"></div> -->
+    <script>
+        var students = ["小龙门火锅冒菜", "麻辣烫", "必胜客", "老媽蹄花", "钵钵鸡", "牛杂米线", "瑞幸咖啡", "火鸡面", "烤冷面", "曾三仙米线", "陶德砂锅", "喜茶", "老妈兔头", "烧仙草", "炸洋芋", "济州炸鸡", "板凳面", "海鲜砂锅粥", "鸭脖", "煎饼", "酸辣粉", "苕皮豆干", "鲍汁捞饭", "小龙坎", "鸭血粉丝汤", "蟹黄拌饭", "大盘鸡", "水饺", "麻辣干锅", "木桶饭", "", "", "", "阿呆炒饭", "蓉城冒菜", "味千拉面", "外婆卤肉饭", "老成都黄焖鸡米饭", "小谷姐姐麻辣拌", "胖哥俩肉蟹煲", "正宗隆江猪脚饭", "鲜师傅骨汤米粉", "招牌卤肉饭", "胖妈烤鸭冒菜", "粥传", "肥仔烧腊店", "螺蛳粉", "重庆鸡公煲", "麦当劳", "肯德基", "馄饨", "牛肉炒河粉", "肥肠粉", "驴肉火烧", "番茄牛肉粥", ""];
+        var p = document.getElementById("name");
+        var start = document.getElementById("start");
+        var end = document.getElementById("end");
+        var timer;
+        function call_name(){
+            var name = students[Math.floor(Math.random()*students.length)]
+            p.innerHTML = name
+        }
+        start.onclick = function(){
+            timer = setInterval(call_name, 1);
+            p.style.color = "#fff"
+            start.disabled = true;
+            document.getElementById("date").innerHTML = ""
+            
+
+        }
+        end.onclick = function(){
+            clearInterval(timer);
+            start.disabled = false;
+            var index = students.indexOf(p.innerHTML);
+            p.style.color = "red"
+            // if(index > -1){
+            //     students.splice(index, 1)
+            // }
+            document.getElementById("date").innerHTML = "我想吃"
+           
+
+            
+        }
+
+    </script>
+    
+</body>
+</html>
